@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="info" >
+   
+ <Properties>
+        <Property name="basePath">${ctx:applicationPath}/logs</Property>
+ </Properties>
+    
+    <Loggers>
+        <Asynclogger name="WSCLIENT" level="info" additivity="false" >
+            <appender-ref ref="WSCLIENT_APPENDER"  />
+        </Asynclogger>       
+    </Loggers>
+   
+    <Appenders>
+ 
+       <RollingRandomAccessFile name="WSCLIENT_APPENDER" fileName="${basePath}/WSClient.log" filePattern="${basePath}/WSClient_%d{yyyy-MM-dd}_%i.log.zip">    
+               <PatternLayout>
+            	<charset>UTF-8</charset>
+                <pattern>%d{MMM dd, yyyy HH:mm:ss.SSS}: %t: %p: %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+			<DefaultRolloverStrategy fileIndex="nomax">
+			<!--
+			      * Uncommenting the following code will enable deletion of log files of above name and  
+			      * which are older than 90 days(configurable only days accepted)
+			      * Be careful! There is no way to recover files deleted this way.
+			-->	
+			<!--			
+				<Delete basePath="${basePath}" >
+	         		 <IfFileName glob="PolicyServer_*.log.zip" />
+	          	 	 <IfLastModified age="90d" />
+	       	 	</Delete>	
+	       	 -->
+			</DefaultRolloverStrategy>  
+        </RollingRandomAccessFile>
+        
+    </Appenders>
+    
+</Configuration>

@@ -1,0 +1,144 @@
+FileSecure Version is 4.4.7.0
+Oct 08, 2022 00:10:15.874: main: INFO: WSCLIENT logger is initialized
+Oct 08, 2022 00:10:15.877: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>SDK Logger is initialized</message></logmessage></logentry>
+Oct 08, 2022 00:10:15.878: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelperLibrary::initializeSuccessfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 00:10:15.938: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: FSHelper()Successfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 00:11:24.284: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>Filemetadata :: matchSignature :  Signatures are not matched </message></logmessage></logentry>
+Oct 08, 2022 00:11:24.284: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isProtectedFile From File Path SpecifiedChecking if file 'D:\test.docx' is protected or not: false</message></logmessage></logentry>
+Oct 08, 2022 00:11:24.957: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isSupportedFileChecking if file 'D:\test.docx' is supported or not: true</message></logmessage></logentry>
+Oct 08, 2022 00:12:18.415: main: INFO: WSCLIENT logger is initialized
+Oct 08, 2022 00:12:18.421: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>SDK Logger is initialized</message></logmessage></logentry>
+Oct 08, 2022 00:12:18.424: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelperLibrary::initializeSuccessfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 00:12:18.498: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: FSHelper()Successfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 00:12:43.924: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>Filemetadata :: matchSignature :  Signatures are not matched </message></logmessage></logentry>
+Oct 08, 2022 00:12:43.926: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isProtectedFile From File Path SpecifiedChecking if file 'D:\test.docx' is protected or not: false</message></logmessage></logentry>
+Oct 08, 2022 00:12:44.750: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isSupportedFileChecking if file 'D:\test.docx' is supported or not: true</message></logmessage></logentry>
+Oct 08, 2022 00:12:57.896: main: INFO: WSCLIENT logger is initialized
+Oct 08, 2022 00:12:57.904: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>SDK Logger is initialized</message></logmessage></logentry>
+Oct 08, 2022 00:12:57.907: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelperLibrary::initializeSuccessfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 00:12:57.980: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: FSHelper()Successfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 00:13:25.965: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>Filemetadata :: matchSignature :  Signatures are not matched </message></logmessage></logentry>
+Oct 08, 2022 00:13:25.966: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isProtectedFile From File Path SpecifiedChecking if file 'D:\test.docx' is protected or not: false</message></logmessage></logentry>
+Oct 08, 2022 00:13:26.788: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isSupportedFileChecking if file 'D:\test.docx' is supported or not: true</message></logmessage></logentry>
+Oct 08, 2022 00:14:47.211: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: sendRequestconnection is null.creating new instance from pool.</message></logmessage></logentry>
+Oct 08, 2022 00:14:47.212: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>Tenant-1:0::No active connections avaiable.</message></logmessage></logentry>
+Oct 08, 2022 00:14:47.219: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>sending the request to policy server.</message></logmessage></logentry>
+Oct 08, 2022 00:14:50.021: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>sending the request to policy server.</message></logmessage></logentry>
+Oct 08, 2022 00:14:50.231: main: ERROR: <logentry><logmessage><requestid>-1</requestid><message>Tenant-1:0:0::Failed to authenticate the session</message><exception>The Enterprise Application with id &apos;5&apos; does not exist.
+com.seclore.fs.ws.client.pscp.exception.PSCPException: The Enterprise Application with id &apos;5&apos; does not exist.
+	at com.seclore.fs.helper.b.k.a(Unknown Source)
+	at com.seclore.fs.helper.b.k.login(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.else(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.a(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.getInstance(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.do(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.getPSConnection(Unknown Source)
+	at com.seclore.fs.helper.library.FSHelper.sendRequest(Unknown Source)
+	at com.seclore.fs.protect.example.main.SecloreMain.searchUser(SecloreMain.java:293)
+	at com.seclore.fs.protect.example.main.SecloreMain.getProtectDetailsXML(SecloreMain.java:179)
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:109)
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:61)
+</exception></logmessage></logentry>
+Oct 08, 2022 00:14:50.232: main: ERROR: Tenant-1:0:0::Failed to authenticate the session
+com.seclore.fs.ws.client.pscp.exception.PSCPException: The Enterprise Application with id '5' does not exist.
+	at com.seclore.fs.helper.b.k.a(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.b.k.login(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.else(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.a(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.getInstance(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.do(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.getPSConnection(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.library.FSHelper.sendRequest(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.searchUser(SecloreMain.java:293) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.getProtectDetailsXML(SecloreMain.java:179) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:109) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:61) [bin/:?]
+Oct 08, 2022 00:14:50.240: main: ERROR: <logentry><logmessage><requestid>-1</requestid><message>Tenant-1:0:: Could not create connection with current URL : https://app102.stringsend.com:443/app102</message><exception>Failed to authenticate the session.
+com.seclore.fs.ws.client.pscp.exception.PSCPException: Failed to authenticate the session.
+	at com.seclore.fs.ws.client.pscp.PSConnection.else(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.a(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.getInstance(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.do(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.getPSConnection(Unknown Source)
+	at com.seclore.fs.helper.library.FSHelper.sendRequest(Unknown Source)
+	at com.seclore.fs.protect.example.main.SecloreMain.searchUser(SecloreMain.java:293)
+	at com.seclore.fs.protect.example.main.SecloreMain.getProtectDetailsXML(SecloreMain.java:179)
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:109)
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:61)
+Caused by: com.seclore.fs.ws.client.pscp.exception.PSCPException: The Enterprise Application with id &apos;5&apos; does not exist.
+	at com.seclore.fs.helper.b.k.a(Unknown Source)
+	at com.seclore.fs.helper.b.k.login(Unknown Source)
+	... 10 more
+</exception></logmessage></logentry>
+Oct 08, 2022 00:14:50.240: main: ERROR: Tenant-1:0:: Could not create connection with current URL : https://app102.stringsend.com:443/app102
+com.seclore.fs.ws.client.pscp.exception.PSCPException: Failed to authenticate the session.
+	at com.seclore.fs.ws.client.pscp.PSConnection.else(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.a(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.getInstance(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.do(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.getPSConnection(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.library.FSHelper.sendRequest(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.searchUser(SecloreMain.java:293) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.getProtectDetailsXML(SecloreMain.java:179) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:109) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:61) [bin/:?]
+Caused by: com.seclore.fs.ws.client.pscp.exception.PSCPException: The Enterprise Application with id '5' does not exist.
+	at com.seclore.fs.helper.b.k.a(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.b.k.login(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	... 10 more
+Oct 08, 2022 00:14:50.241: main: ERROR: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: sendRequestFailed to authenticate the session.</message><exception>Failed to authenticate the session.
+com.seclore.fs.ws.client.pscp.exception.PSCPException: Failed to authenticate the session.
+	at com.seclore.fs.ws.client.pscp.PSConnection.else(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.a(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnection.getInstance(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.do(Unknown Source)
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.getPSConnection(Unknown Source)
+	at com.seclore.fs.helper.library.FSHelper.sendRequest(Unknown Source)
+	at com.seclore.fs.protect.example.main.SecloreMain.searchUser(SecloreMain.java:293)
+	at com.seclore.fs.protect.example.main.SecloreMain.getProtectDetailsXML(SecloreMain.java:179)
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:109)
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:61)
+Caused by: com.seclore.fs.ws.client.pscp.exception.PSCPException: The Enterprise Application with id &apos;5&apos; does not exist.
+	at com.seclore.fs.helper.b.k.a(Unknown Source)
+	at com.seclore.fs.helper.b.k.login(Unknown Source)
+	... 10 more
+</exception></logmessage></logentry>
+Oct 08, 2022 00:14:50.241: main: ERROR: FSHelper :: sendRequestFailed to authenticate the session.
+com.seclore.fs.ws.client.pscp.exception.PSCPException: Failed to authenticate the session.
+	at com.seclore.fs.ws.client.pscp.PSConnection.else(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.a(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnection.getInstance(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.do(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.ws.client.pscp.PSConnectionPool.getPSConnection(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.library.FSHelper.sendRequest(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.searchUser(SecloreMain.java:293) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.getProtectDetailsXML(SecloreMain.java:179) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:109) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:61) [bin/:?]
+Caused by: com.seclore.fs.ws.client.pscp.exception.PSCPException: The Enterprise Application with id '5' does not exist.
+	at com.seclore.fs.helper.b.k.a(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.b.k.login(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	... 10 more
+Oct 08, 2022 00:14:50.241: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: sendRequestReleasing newly created connection to pool.</message></logmessage></logentry>
+Oct 08, 2022 00:14:50.243: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>Terminating FSHelper Library</message></logmessage></logentry>
+Oct 08, 2022 12:48:12.891: main: INFO: WSCLIENT logger is initialized
+Oct 08, 2022 12:48:12.893: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>SDK Logger is initialized</message></logmessage></logentry>
+Oct 08, 2022 12:48:12.894: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelperLibrary::initializeSuccessfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 12:48:12.928: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: FSHelper()Successfully Initialized helper library.</message></logmessage></logentry>
+Oct 08, 2022 13:04:30.916: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>WSClient :: isProtectedFile :  File is missing </message></logmessage></logentry>
+Oct 08, 2022 13:04:30.919: main: ERROR: <logentry><logmessage><requestid>-1</requestid><message>FSHelper :: isProtectedFile From File Path SpecifiedFile is missing</message><exception>File is missing
+com.seclore.fs.ws.client.exception.WSClientException: File is missing
+	at com.seclore.fs.ws.client.WSClient.isProtectedFile(Unknown Source)
+	at com.seclore.fs.helper.library.FSHelper.isProtectedFile(Unknown Source)
+	at com.seclore.fs.protect.example.main.SecloreMain.validateIfFileSupportsProtection(SecloreMain.java:140)
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:104)
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:62)
+</exception></logmessage></logentry>
+Oct 08, 2022 13:04:30.919: main: ERROR: FSHelper :: isProtectedFile From File Path SpecifiedFile is missing
+com.seclore.fs.ws.client.exception.WSClientException: File is missing
+	at com.seclore.fs.ws.client.WSClient.isProtectedFile(Unknown Source) ~[fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.helper.library.FSHelper.isProtectedFile(Unknown Source) [fs-ws-client-4.4.7.0.jar:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.validateIfFileSupportsProtection(SecloreMain.java:140) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.protectAndWrapFile(SecloreMain.java:104) [bin/:?]
+	at com.seclore.fs.protect.example.main.SecloreMain.main(SecloreMain.java:62) [bin/:?]
+Oct 08, 2022 13:04:30.925: main: INFO: <logentry><logmessage><requestid>-1</requestid><message>Terminating FSHelper Library</message></logmessage></logentry>

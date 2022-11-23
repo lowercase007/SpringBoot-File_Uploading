@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Configuration File (1.0.0.0). -->
+<!-- This file contains the XML strcuture which should be passed
+to the IFSHelperInitialize API to initialize the Library -->
+
+<fs-helper-ps-config>
+    <ps-details>
+        <!-- URLs of the Policy Server. -->
+        <urls>
+            <!-- 
+            URL of the Policy Server. Multiple such tags can be present. 
+            It is recommended to put reachable URL as first URL and then 
+            backup URL. 
+            -->
+            <url>
+                <!-- Parts of URL. 
+                For example, if URL is https://demo.seclore.com:9443/PolicyServer,
+                    server:      demo.seclore.com
+                    port:        9443
+                    app-name:    PolicyServer
+                    -->
+                <!-- <server>app50.stringsend.com</server> -->
+                <server>app102.stringsend.com</server>
+                <port>443</port>
+                <app-name>app102</app-name>
+            </url>
+        </urls>
+    </ps-details>
+    
+	<!-- Login details for this instance -->
+	<login-details>
+		<!-- 
+			Login user type.
+				1: Cabinet User -->
+		<user-type>1</user-type>
+
+		<!-- Structure for user type Cabinet User(1) -->
+		<!-- Hot Folder Cabinet details. This details are used to authenticate with 
+		Policy Server. -->
+		<hotfolder-cabinet>
+			<!-- 
+			Hot Folder Cabinet identifier. 
+			-->
+			<id>5</id>
+			<!-- 
+			Hot Folder Cabinet pass phrase. 
+			-->
+			<passphrase>Seclore@10</passphrase>
+			
+			<!-- 
+			Flag to enable advance priviledges 
+			-->
+			<allow-advanced-privileges>false</allow-advanced-privileges>
+		</hotfolder-cabinet>
+		
+	</login-details>
+    
+    <!-- This tag defines whether inline attachment should be embedded in unprotected mail body or should be provided separately
+        true : Inline attachments will get embedded in mail body.
+        false : Inline attachments will be provided separately and not as mail body content.
+        -->
+    <include-inline-attachment-in-mail-body>false</include-inline-attachment-in-mail-body>
+    
+    <!-- 
+    Policy Server session pool configuration. 
+    -->
+    <session-pool>
+        <!-- 
+        Max. number of connection with Policy Server. This value is based on 
+        (equal to) active concurrent users of Integrating Application deployment. 
+        -->
+        <max-size>50</max-size>
+        <!-- 
+        Policy Server session timeout in seconds. This is typically 15 minutes (900 seconds). 
+		for Policy Server. Value of this tag can be found in configuration file 
+		of Web Application Server (web.xml for Tomcat). 
+        -->
+        <default-session-timeout>900</default-session-timeout>
+    </session-pool>
+
+    <!-- 
+    Details of proxy server, if required to connect to Policy Server.  
+	If not required, remove the following tag itself. It is optional.
+    -->
+    <proxy-details>
+        <server></server>
+        <port></port>
+        <user></user>
+        <password></password>
+        <!-- 
+        Semicolon (;) separated list of URL patterns, just like IE bypass 
+        list in Internet Explorer. 
+        -->
+        <bypass-list></bypass-list>
+    </proxy-details>
+</fs-helper-ps-config>
